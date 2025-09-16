@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>ROBERTO-TELEFLIX</title>
+  <title>jheni-musicas</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>ROBERTO-TELEFLIX</h1>
+    <h1>jheni-musicas</h1>
   </header>
 
   <!-- LAYOUT: MENU LATERAL (ESQ) + VÍDEO (DIR) -->
@@ -116,48 +116,92 @@
   <script>
     // Mapa de temas → lista de vídeos
     const TEMAS = {
-      LOUVOR: [
-        { titulo: "EU SOU TEU PAI", 
-         autor: "VALESCA MAYSSA", 
-         url: "https://www.youtube.com/watch?v=kNJPalON82E" 
+      funk: [
+        { titulo: "famosinha", 
+         autor: "dj caio vieira", 
+         url: "https://youtu.be/gEAXyEUQPUs?si=_WWE2xSbp2du5jRP" 
         },
-        { titulo: "DEUS DE PROMESSAS", 
-         autor: "MINISTÉRIO APASCENTAR", 
-         url: "https://youtu.be/93XkdakMp00?si=-S0mta76Kc_GxWhd" 
+        { titulo: "vou pela madrugada", 
+         autor: "negão original", 
+         url: "https://youtu.be/fLyg6i8u0x8?si=0d1X58So-I5XVVDH" 
         },
-        { titulo: "NINGUÉM EXPLICA DEUS", 
-         autor: "PRETO NO BRANCO", 
-         url: "https://youtu.be/LYsaKn8FRhc?si=R7yN3htfuafehfSw" 
+        { titulo: "medley de igaratá 3", 
+         autor: "negão original", 
+         url: "https://youtu.be/TTJwGXaWHPs?si=H2LZnC7UoJBQzVgS" 
+        },
+         { titulo: "fala na cara", 
+         autor: "mc paiva", 
+         url: "https://youtu.be/sX5R9yC27Bk?si=cQXWzgpgZ56pYVau" 
+        }
+         { titulo: "ballena", 
+         autor: "vulgo fk", 
+         url: "https://youtu.be/0nHHZZRYNf4?si=2OjihLt4AuAXIy47" 
+        }
+      ],
+      infantil: [
+        { titulo: "fazendinha", 
+         autor: "mundo bita", 
+         url: "https://youtu.be/cjONzZPJONc?si=-UVfXq0wz452CDnX" 
+        },
+        { titulo: "fundo do mar", 
+         autor: "mundo bita", 
+         url: "https://youtu.be/iY91JoMWQoM?si=BFfUgDeKJM5FQ4SO" 
+        },
+         { titulo: "farra da capivara", 
+         autor: "mundo bita", 
+         url: "https://youtu.be/3gtnv4cmcmg?si=x4diCp7gCV_kWuFL" 
+        },
+         { titulo: "o show tem que continuar", 
+         autor: "rádio bita", 
+         url: "https://youtu.be/h0UAMr_CVH4?si=r0X_WNpdv7la8AH4" 
+        },
+         { titulo: "aquarela", 
+         autor: "rádio bita", 
+         url: "https://youtu.be/KyS3VZs5ERc?si=iFAmBAC2daacvibt" 
         },
       ],
-      MENSAGENS: [
-        { titulo: "O TEMPO É CURTO; FAÇA O MELHOR USO DO SEU TEMPO", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/fmsAqGy2pCM?si=u8aCy5Lwjoj80xAB" 
+      Pop: [
+        { titulo: "bang", 
+         autor: "anitta", 
+         url: "https://youtu.be/UGov-KH7hkM?si=IblP-91p5jaQUzHu" 
         },
-        { titulo: "QUEM É JESUS CRISTO?", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/6ATJ6avomUg?si=4_qlxZGejDlxVyz5" 
+        { titulo: "essa mina é louca", 
+         autor: "anitta ", 
+         url: "https://youtu.be/ghQOd88PM80?si=hFCDJuU7yaBh4QrI" 
+        },
+        { titulo: "cobertor", 
+         autor: "anitta", 
+         url: "https://youtu.be/sMUVXJId8Eo?si=JlopUM5Z6lvzqtmi" 
+        },
+        { titulo: "vocẽ partiu meu coração", 
+         autor: "nego do borel ft anitta,wesley safadão", 
+         url: "https://youtu.be/Xp-dKdSUuLk?si=cpP14dvNR16jYuIo" 
+        },
+        { titulo: "deixa ele sofrer", 
+         autor: "anitta", 
+         url: "https://youtu.be/geFj_kMvasQ?si=HvJ440E9Ciz2JEwA" 
         },
       ],
-      INFANTIL: [
-        { titulo: "SOY UNA TAZA", 
-         autor: "CANTA JUEGO", 
-         url: "https://youtu.be/cgEnBkmcpuQ?si=paA3pkAIp3lgAmjQ" 
+      luiza sonsa: [
+        { titulo: "penhasco", 
+         autor: "luiza sonsa", 
+         url: "https://youtu.be/o5Sg1dIaHCU?si=POjK7hLvqI9fm9ep" 
         },
-        { titulo: "PEDRO, THIAGO, JOÃO NO BARQUINHO", 
-         autor: "3 PALAVRINHAS", 
-         url: "https://youtu.be/Tdwy3BZe61s?si=As38T49IC695wKE0" 
+        { titulo: "interesseira", 
+         autor: "luiza sonsa", 
+         url: "https://youtu.be/5js-3DnNvFw?si=IDD06hTxMMYJIoVm" 
         },
-      ],
-      AULAS: [
-        { titulo: "INTRODUÇÃO A JAVASCRIPT", 
-         autor: "TIGER CODES", 
-         url: "https://youtu.be/WRlfwBof66s?si=0o80ULtCNqjj-lU2" 
+        { titulo: "surreal", 
+         autor: "luiza sonsa,baco exu do blues", 
+         url: "https://youtu.be/CPO5BaOtrAQ?si=wmqjULoUkxn7-HlN" 
         },
-        { titulo: "HTML E CSS BÁSICO EM 5 MINUTOS", 
-         autor: "TIGER CODES", 
-         url: "https://www.youtube.com/watch?v=5Hn58p-hYC0" 
+        { titulo: "a dona aranha", 
+         autor: "luiza sonsa", 
+         url: "https://youtu.be/FagXY6eTBCQ?si=06blEaGAmD_4yFyn" 
+        },
+        { titulo: "sou musa do verão", 
+         autor: "luiza sonsa,marshmello", 
+         url: "https://youtu.be/GZSV4uUAzsE?si=bOs9gKE4xRf4hiUT" 
         },
       ],
     };
